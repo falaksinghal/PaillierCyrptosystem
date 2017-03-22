@@ -2,6 +2,26 @@
  * Implementation of Paillier Cyptosystem toolbox
  * Author : Falak Singhal (fxs161530@utdallas.edu)
  * University of Texas at Dallas
+ * 
+ * Using the Paillier encryption toolbox1, develop a simple program that executes the following
+ * tasks given the following command line options:
+ * • -keygen -outputPK public-key-file -outputPr private-key-file: It will generate Paillier with
+ * n equals to 2048 bit key. Output two files, one public key, one private key file. To enable
+ * this, you may need to change the constructor of the Pallier class. By default,
+ * it may not allow you to do this. Please take a look at the code. Please
+ * include the modified Paillier toolbox code in your submission.
+ * • -encrypt -pk public-keyfile -input input-file -output output-file: It will create an encrypted
+ * file that contains two encrypted values per line for each integer per line in the input file,
+ * for example, if x is on the first line of the input file, the first line of the output file will
+ * contain E(x), E(x^2).
+ * • -process -pk public-key-file -input encrypted-file -output output-file: You will process the
+ * encrypted file with two encrypted values per line to output, encrypted sum, encrypted
+ * sum of squares and encrypted count values. Each of these encrypted statistics must be
+ * outputed on a separate line.
+ * • -decryt -pr private-key-file -input encrypted-input-file -output output-file This will be
+ * used to decrypt the encrypted values stored per line in the file to get the decrypted
+ * results.
+ * 
  */
 
 
